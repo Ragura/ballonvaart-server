@@ -1,12 +1,16 @@
+require("dotenv-flow").config({
+  path: "./env"
+});
 const express = require("express");
 const cors = require("cors");
-
 
 const app = express();
 
 app.use(cors());
 app.use(express.json());
 
+
+require("./config/mongoose");
 require("./app")(app);
 
 const port = 7000;
