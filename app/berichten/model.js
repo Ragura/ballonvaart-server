@@ -21,4 +21,12 @@ const berichtSchema = new Schema(
   }
 );
 
+berichtSchema.set("toJSON", {
+  virtuals: true,
+  versionKey: false,
+  transform: function(doc, ret) {
+    delete ret._id;
+  }
+});
+
 module.exports = mongoose.model("Bericht", berichtSchema, "berichten");

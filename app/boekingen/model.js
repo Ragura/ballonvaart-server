@@ -40,4 +40,12 @@ const boekingSchema = new Schema(
   }
 );
 
+boekingSchema.set("toJSON", {
+  virtuals: true,
+  versionKey: false,
+  transform: function(doc, ret) {
+    delete ret._id;
+  }
+});
+
 module.exports = mongoose.model("Boeking", boekingSchema, "boekingen");

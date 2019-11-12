@@ -13,7 +13,7 @@ app.use(express.json());
 require("./config/mongoose");
 require("./app")(app);
 
-const port = 7000;
+const port = process.env.PORT || 7000;
 
 app.use((req, res) => {
   return res.status(404).send("Bron niet gevonden");

@@ -9,7 +9,8 @@ const connectionString = "mongodb+srv://" +
 mongoose.connect(connectionString, {
   useNewUrlParser: true,
   useFindAndModify: false,
-  useUnifiedTopology: true
+  useUnifiedTopology: true,
+  useCreateIndex: true
 }).then(() => {
   console.log("Connectie met MongoDB gelegd.");
 }).catch(err => {
