@@ -1,0 +1,52 @@
+{"message":"Server luistert op poort 7000","level":"info"}
+{"message":"Server luistert op poort 7000","level":"info"}
+{"message":"Server luistert op poort 7000","level":"info"}
+{"message":"Server luistert op poort 7000","level":"info"}
+{"message":"Server luistert op poort 7000","level":"info"}
+{"message":"Server luistert op poort 7000","level":"info"}
+{"message":"Server luistert op poort 7000","level":"error"}
+{"message":"Server luistert op poort 7000","level":"info"}
+2019-11-19T18:51:45.947Z [right meow!] info: Server luistert op poort 7000
+2019-11-19T18:52:07.424Z - info: Server luistert op poort 7000
+2019-11-19T18:52:42.363Z - info: Server luistert op poort 7000
+2019-11-19T18:53:01.976Z - info: Server luistert op poort 7000
+2019-11-19T18:59:17.958Z - info: Server luistert op poort 7000
+2019-11-19T19:00:16.839Z - info: Server luistert op poort 7000
+2019-11-19T19:00:42.545Z - info: Server luistert op poort 7000
+2019-11-19T19:00:50.054Z - info: Server luistert op poort 7000
+2019-11-19T19:02:50.023Z - info: Server luistert op poort 7000
+2019-11-19T19:02:55.521Z - error: Cannot read property 'eigenschap2' of undefined
+2019-11-19T19:05:31.336Z - info: Server luistert op poort 7000
+2019-11-19T19:05:33.142Z - error: Cannot read property 'eigenschap2' of undefined
+2019-11-19T19:06:00.619Z - info: Server luistert op poort 7000
+2019-11-19T19:07:59.247Z - info: Server luistert op poort 7000
+2019-11-19T19:09:32.509Z - info: Server luistert op poort 7000
+2019-11-19T19:09:48.807Z - info: Server luistert op poort 7000
+2019-11-19T19:10:13.976Z - info: Server luistert op poort 7000
+2019-11-19T19:10:44.548Z - info: Server luistert op poort 7000
+2019-11-19T19:11:06.375Z - info: Server luistert op poort 7000
+2019-11-19T19:11:26.624Z - info: Server luistert op poort 7000
+2019-11-19T19:11:41.189Z - info: Server luistert op poort 7000
+2019-11-19T19:15:26.557Z - info: Server luistert op poort 7000
+2019-11-19T19:17:35.243Z - info: Server luistert op poort 7000
+2019-11-19T19:19:36.827Z - info: Server luistert op poort 7000
+2019-11-19T19:21:42.726Z - info: Server luistert op poort 7000
+2019-11-19T19:22:23.423Z - info: Server luistert op poort 7000
+2019-11-19T19:23:33.764Z - info: Server luistert op poort 7000
+2019-11-19T19:30:13.824Z - info: Server luistert op poort 7000
+2019-11-19T19:31:41.016Z - info: Server luistert op poort 7000
+2019-11-19T19:33:33.128Z - info: Server luistert op poort 7000
+2019-11-19T19:34:21.283Z - info: Server luistert op poort 7000
+2019-11-19T19:34:52.928Z - info: Server luistert op poort 7000
+2019-11-19T19:35:13.454Z - info: Server luistert op poort 7000
+2019-11-19T19:35:29.647Z - info: Server luistert op poort 7000
+2019-11-19T19:35:46.871Z - info: Server luistert op poort 7000
+2019-11-19T19:36:08.998Z - info: Server luistert op poort 7000
+2019-11-19T19:37:29.208Z - info: Server luistert op poort 7000
+2019-11-19T19:37:58.828Z - info: Server luistert op poort 7000
+2019-11-19T19:39:24.596Z - info: Server luistert op poort 7000
+2019-11-19T19:39:33.228Z - info: Server luistert op poort 7000
+2019-11-19T19:39:33.471Z - info: Connectie met MongoDB gelegd.
+2019-11-19T19:59:39.416Z - error: Cannot read property 'wachtwoord' of null
+2019-11-19T20:01:21.602Z - info: Server luistert op poort 7000
+2019-11-19T20:01:21.927Z - info: Connectie met MongoDB gelegd.

@@ -1,9 +1,10 @@
 const mongoose = require("mongoose");
+const logger = require("../utils/logger");
 
 const connectionString = "mongodb+srv://" + 
                          `${process.env.DB_USER}:${process.env.DB_PASSWORD}` +
                          `@cluster0-kruq0.mongodb.net/${process.env.DB_NAME}` + 
-                         "?retryWrites=true&w=majority"
+                         "?retryWrites=true&w=majority";
 
 
 mongoose.connect(connectionString, {
@@ -12,7 +13,7 @@ mongoose.connect(connectionString, {
   useUnifiedTopology: true,
   useCreateIndex: true
 }).then(() => {
-  console.log("Connectie met MongoDB gelegd.");
+  logger.info("Connectie met MongoDB gelegd.");
 }).catch(err => {
   console.log(err.stack);
   process.exit(1);
