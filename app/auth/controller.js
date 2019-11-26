@@ -4,6 +4,7 @@ const jwt = require("jsonwebtoken");
 
 exports.registreren = async (req, res) => {
   const { email, wachtwoord, naam, voornaam } = req.body;
+
   const nieuweGebruiker = new Gebruiker({email, wachtwoord, naam, voornaam});
 
   await nieuweGebruiker.save();

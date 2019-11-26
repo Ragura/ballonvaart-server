@@ -50,3 +50,9 @@
 2019-11-19T19:59:39.416Z - error: Cannot read property 'wachtwoord' of null
 2019-11-19T20:01:21.602Z - info: Server luistert op poort 7000
 2019-11-19T20:01:21.927Z - info: Connectie met MongoDB gelegd.
+2019-11-26T17:42:31.273Z - info: Server luistert op poort 7000
+2019-11-26T17:42:31.583Z - info: Connectie met MongoDB gelegd.
+2019-11-26T19:54:16.721Z - info: Server luistert op poort 7000
+2019-11-26T19:54:16.963Z - info: Connectie met MongoDB gelegd.
+2019-11-26T19:59:17.828Z - info: Server luistert op poort 7000
+2019-11-26T19:59:18.076Z - info: Connectie met MongoDB gelegd.

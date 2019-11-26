@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 const boekingSchema = new Schema(
   {
     datum: {
-      type: Date,
+      type: String,
       required: true
     },
     moment: {
@@ -18,6 +18,7 @@ const boekingSchema = new Schema(
       type: Number,
       required: true,
       min: 1,
+      max: 10,
       validate: {
         validator(value) {
           return Number.isInteger(value);
@@ -25,16 +26,28 @@ const boekingSchema = new Schema(
         message: "{VALUE} is geen geheel getal."
       }
     },
-    contactgegevens: {
-      type: new Schema({
-        naam: String,
-        voornaam: String,
-        email: String,
-        telefoon: String
-      }, {
-        _id: false
-      })
+    type: {
+      type: String,
+      required: true,
+      enum: ["classic", "ontbijt", "luxe"],
+      lowercase: true,
+      default: "classic"
+    },
+    gebruiker: {
+      type: Schema.Types.ObjectId,
+      required: false,
+      ref: "Gebruiker"
     }
+    // contactgegevens: {
+    //   type: new Schema({
+    //     naam: String,
+    //     voornaam: String,
+    //     email: String,
+    //     telefoon: String
+    //   }, {
+    //     _id: false
+    //   })
+    // }
   }, {
     timestamps: true
   }
