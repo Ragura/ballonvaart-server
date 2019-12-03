@@ -1,8 +1,26 @@
 const Boeking = require("./model");
+const dayjs = require("dayjs");
 
 exports.list = async (req, res) => {
   const boekingen = await Boeking.find();
   return res.send(boekingen);
+};
+
+exports.geboekteData = async (req, res) => {
+  const volgendeDatum = dayjs().add(7, "day").startOf("day");
+  
+  const boekingen = await Boeking.find({
+    datum: {
+      $gt: volgendeDatum.format()
+    }
+  }).select("datum moment").sort("datum -moment");
+  
+  return res.send(boekingen.map(b => {
+    return {
+      datum: b.datum,
+      moment: b.moment
+    };
+  }));
 };
 
 exports.create = async (req, res) => {

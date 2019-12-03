@@ -38,16 +38,6 @@ const boekingSchema = new Schema(
       required: false,
       ref: "Gebruiker"
     }
-    // contactgegevens: {
-    //   type: new Schema({
-    //     naam: String,
-    //     voornaam: String,
-    //     email: String,
-    //     telefoon: String
-    //   }, {
-    //     _id: false
-    //   })
-    // }
   }, {
     timestamps: true
   }

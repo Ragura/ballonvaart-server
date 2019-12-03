@@ -56,3 +56,28 @@
 2019-11-26T19:54:16.963Z - info: Connectie met MongoDB gelegd.
 2019-11-26T19:59:17.828Z - info: Server luistert op poort 7000
 2019-11-26T19:59:18.076Z - info: Connectie met MongoDB gelegd.
+2019-12-03T17:51:30.399Z - info: Server luistert op poort 7000
+2019-12-03T17:51:30.702Z - info: Connectie met MongoDB gelegd.
+2019-12-03T18:58:12.998Z - info: Server luistert op poort 7000
+2019-12-03T18:58:13.263Z - info: Connectie met MongoDB gelegd.
+2019-12-03T19:32:55.664Z - info: Server luistert op poort 7000
+2019-12-03T19:32:55.938Z - info: Connectie met MongoDB gelegd.
+2019-12-03T19:34:22.549Z - info: Server luistert op poort 7000
+2019-12-03T19:34:23.023Z - info: Connectie met MongoDB gelegd.
+2019-12-03T19:39:46.446Z - info: Server luistert op poort 7000
+2019-12-03T19:39:51.746Z - info: Connectie met MongoDB gelegd.
+2019-12-03T19:40:25.796Z - info: Server luistert op poort 7000
+2019-12-03T19:40:26.035Z - info: Connectie met MongoDB gelegd.
+2019-12-03T19:40:27.985Z - error: Converting circular structure to JSON
+2019-12-03T19:43:32.813Z - error: Converting circular structure to JSON
+2019-12-03T19:44:10.205Z - info: Server luistert op poort 7000
+2019-12-03T19:44:10.480Z - info: Connectie met MongoDB gelegd.
+2019-12-03T19:44:12.803Z - error: Converting circular structure to JSON
+2019-12-03T19:44:56.793Z - info: Server luistert op poort 7000
+2019-12-03T19:44:57.067Z - info: Connectie met MongoDB gelegd.
+2019-12-03T19:44:58.739Z - info: Server luistert op poort 7000
+2019-12-03T19:44:59.032Z - info: Connectie met MongoDB gelegd.
+2019-12-03T19:46:35.451Z - info: Server luistert op poort 7000
+2019-12-03T19:46:40.783Z - info: Connectie met MongoDB gelegd.
+2019-12-03T20:01:26.905Z - info: Server luistert op poort 7000
+2019-12-03T20:01:27.167Z - info: Connectie met MongoDB gelegd.
