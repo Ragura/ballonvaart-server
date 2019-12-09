@@ -20,6 +20,8 @@ app.use(customResponses);
 require("./config/mongoose");
 require("./app")(app);
 
+logger.info(process.env.PORT, process.env.DB_USER, process.env.DB_PASSWORD);
+
 const port = process.env.PORT || 7000;
 
 app.use((req, res) => {
