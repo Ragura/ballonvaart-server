@@ -9,9 +9,11 @@ exports.create = async (req, res) => {
   const data = req.body;
 
   const bestaandeGebruiker = await Gebruiker.find({email: data.email});
-  if (bestaandeGebruiker) {
+  
+  if (bestaandeGebruiker.length) {
     return res.badRequest(`Gebruiker met e-mailadres ${data.email} bestaat al.`);
   }
+  
 
   const nieuweGebruiker = new Gebruiker(data);
 
@@ -28,7 +30,7 @@ exports.update = async (req, res) => {
   }
 
   const bestaandeGebruiker = await Gebruiker.find({email: data.email});
-  if (bestaandeGebruiker) {
+  if (bestaandeGebruiker.length) {
   return res.badRequest(`Gebruiker met e-mailadres ${data.email} bestaat al.`);
   }
 
