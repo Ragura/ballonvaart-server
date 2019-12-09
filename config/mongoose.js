@@ -15,6 +15,7 @@ mongoose.connect(connectionString, {
 }).then(() => {
   logger.info("Connectie met MongoDB gelegd.");
 }).catch(err => {
+  logger.error("Connectie met MongoDB kon niet worden gelegd!\n" + err.stack);
   console.log(err.stack);
   process.exit(1);
 });
