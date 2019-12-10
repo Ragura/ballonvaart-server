@@ -20,7 +20,7 @@ app.use(customResponses);
 require("./config/mongoose");
 
 // Serveer alle statische bestanden in de map "client" via static middleware
-const staticFileMiddleware = express.static("client");
+const staticFileMiddleware = express.static("client/dist");
 app.use(staticFileMiddleware);
 // Vue applicaties met vue-router in history mode hebben een extra workaround nodig
 app.use(history());
