@@ -1,5 +1,6 @@
 const Boeking = require("./model");
 const dayjs = require("dayjs");
+const Gebruiker = require("../gebruikers/model");
 
 exports.list = async (req, res) => {
   const boekingen = await Boeking.find();
@@ -26,6 +27,22 @@ exports.geboekteData = async (req, res) => {
 exports.create = async (req, res) => {
   const data = req.body;
   const nieuweBoeking = new Boeking(data);
+
+  await nieuweBoeking.save();
+  return res.send(nieuweBoeking);
+};
+
+exports.boeken = async (req, res) => {
+  const { datum, moment, aantalPersonen, type} = req.body;
+
+  const bestaandeBoeking = await Boeking.findOne({datum, moment});
+  if (bestaandeBoeking) {
+    return res.badRequest("Er bestaat al een boeking op dit moment");
+  }
+
+  const gebruiker = await Gebruiker.findOne({email: req.gebruiker.email});
+
+  const nieuweBoeking = new Boeking({ datum, moment, aantalPersonen, type, gebruiker});
 
   await nieuweBoeking.save();
   return res.send(nieuweBoeking);

@@ -33,7 +33,8 @@ exports.aanmelden = async (req, res) => {
   const komtOvereen = bcrypt.compare(wachtwoord, gebruiker.wachtwoord);
   if (komtOvereen) {
     // Stuur JWT terug
-    const accessToken = jwt.sign({email: gebruiker.email}, process.env.JWT_SECRET, {
+    
+    const accessToken = jwt.sign({gebruiker}, process.env.JWT_SECRET, {
       expiresIn: "1d"
     });
     return res.send({

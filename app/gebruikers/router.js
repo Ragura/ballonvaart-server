@@ -1,9 +1,10 @@
 const router = require("express").Router();
 const controller = require("./controller");
+const autoriseren = require("../../middleware/autoriseren");
 
-router.get("/", controller.list);
-router.post("/", controller.create);
-router.put("/:id", controller.update);
-router.delete("/:id", controller.delete);
+router.get("/", autoriseren(["admin"]), controller.list);
+router.post("/", autoriseren(["admin"]), controller.create);
+router.put("/:id", autoriseren(["admin"]), controller.update);
+router.delete("/:id", autoriseren(["admin"]), controller.delete);
 
 module.exports = router;
