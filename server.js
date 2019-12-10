@@ -4,6 +4,7 @@ require("dotenv-flow").config({
 
 const logger = require("./utils/logger");
 const customResponses = require("./middleware/customResponses");
+const history = require("connect-history-api-fallback");
 
 require("express-async-errors");
 
@@ -18,6 +19,12 @@ app.use(express.json());
 app.use(customResponses);
 
 require("./config/mongoose");
+
+const staticFileMiddleware = express.static('client/dist');
+app.use(staticFileMiddleware);
+app.use(history());
+app.use(staticFileMiddleware);
+
 require("./app")(app);
 
 const port = process.env.PORT || 7000;
